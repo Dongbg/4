@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Accessible Interactive Photo Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="addTabFocus()">
+
+<h1>Accessible Interactive Photo Gallery</h1>
+
+<div id="image">
+  Hover over or focus on an image below to display here.
+</div>
+
+<div class="gallery">
+
+  <img src="images/img1.jpg" alt="Mountain landscape"
+       onmouseover="upDate(this)"
+       onmouseleave="undo()"
+       onfocus="upDate(this)"
+       onblur="undo()">
+
+  <img src="images/img2.jpg" alt="Beach at sunset"
+       onmouseover="upDate(this)"
+       onmouseleave="undo()"
+       onfocus="upDate(this)"
+       onblur="undo()">
+
+  <img src="images/img3.jpg" alt="City skyline"
+       onmouseover="upDate(this)"
+       onmouseleave="undo()"
+       onfocus="upDate(this)"
+       onblur="undo()">
+
+  <img src="images/img4.jpg" alt="Forest trail"
+       onmouseover="upDate(this)"
+       onmouseleave="undo()"
+       onfocus="upDate(this)"
+       onblur="undo()">
+
+  <img src="images/img5.jpg" alt="Lake reflection"
+       onmouseover="upDate(this)"
+       onmouseleave="undo()"
+       onfocus="upDate(this)"
+       onblur="undo()">
+
+  <img src="images/img6.jpg" alt="Desert landscape"
+       onmouseover="upDate(this)"
+       onmouseleave="undo()"
+       onfocus="upDate(this)"
+       onblur="undo()">
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
